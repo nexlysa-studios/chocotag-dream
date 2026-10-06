@@ -1,4 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
+import newLogo from "@/assets/newlogo.png";
 
 export function Footer() {
   return (
@@ -6,9 +7,11 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <p className="font-display text-3xl tracking-tight text-cocoa-deep">
-              choco<span className="italic text-accent">tag</span>
-            </p>
+            <img
+              src={newLogo}
+              alt="Chocotag logo"
+              className="h-12 w-auto object-contain md:h-14"
+            />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               The home of premium chocolate desserts in Cape Town. Handcrafted, freshly
               prepared, always a little indulgent.

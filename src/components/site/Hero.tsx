@@ -1,15 +1,26 @@
-import heroImg from "@/assets/hero-chocolate.jpg";
+import heroImg from "@/assets/Chocotag (5).webp";
+import heroVideo from "@/assets/Chocotag-hero.mp4";
 
 export function Hero() {
   return (
     <section id="home" className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
+      <video
+        aria-hidden="true"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={heroImg}
+        src={heroVideo}
+        className="absolute inset-0 h-full w-full object-cover md:hidden"
+      />
       <img
         src={heroImg}
-        alt="Melted chocolate poured over brownies and vanilla ice cream"
+        alt="Chocotag dessert table with premium chocolate creations"
         width={1920}
         height={1280}
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover hidden md:block"
       />
       <div className="absolute inset-0 bg-gradient-hero" />
       <div className="absolute inset-0 bg-cocoa-deep/25" />
@@ -35,11 +46,11 @@ export function Hero() {
         </div>
 
         <h1
-          className="animate-rise font-display text-5xl leading-[1.02] text-balance md:text-7xl lg:text-8xl"
+          className="hero-title shiny-text animate-rise font-display text-5xl leading-[1.02] text-balance md:text-7xl lg:text-8xl"
           style={{ animationDelay: "0.5s" }}
         >
           The Home of{" "}
-          <span className="italic text-gold-shimmer">Premium</span>
+          <span className="italic">Premium</span>
           <br />
           Chocolate Desserts.
         </h1>

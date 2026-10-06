@@ -7,12 +7,12 @@ import sundae from "@/assets/dessert-sundae.jpg";
 import icecream from "@/assets/dessert-icecream.jpg";
 
 const items = [
-  { img: waffle, name: "Belgian Waffles", desc: "Crisp, golden, drizzled with Belgian chocolate & fresh berries.", tall: true },
-  { img: brownie, name: "Molten Brownies", desc: "Warm fudge centres, cocoa dust, vanilla bean ice cream.", tall: false },
-  { img: pancakes, name: "Pancake Stacks", desc: "Fluffy stacks cascading with dark chocolate ganache.", tall: false },
-  { img: shake, name: "Signature Shakes", desc: "Thick, velvety milkshakes crowned with fresh cream.", tall: true },
-  { img: sundae, name: "Loaded Sundaes", desc: "Layered indulgence — sauce, nuts, cherries, cream.", tall: false },
-  { img: icecream, name: "Artisan Ice Cream", desc: "Small-batch scoops finished with 24k gold flakes.", tall: false },
+  { img: waffle, name: "Belgian Waffles", desc: "Crisp, golden, drizzled with Belgian chocolate & fresh berries." },
+  { img: brownie, name: "Molten Brownies", desc: "Warm fudge centres, cocoa dust, vanilla bean ice cream." },
+  { img: pancakes, name: "Pancake Stacks", desc: "Fluffy stacks cascading with dark chocolate ganache." },
+  { img: shake, name: "Signature Shakes", desc: "Thick, velvety milkshakes crowned with fresh cream." },
+  { img: sundae, name: "Loaded Sundaes", desc: "Layered indulgence — sauce, nuts, cherries, cream." },
+  { img: icecream, name: "Artisan Ice Cream", desc: "Small-batch scoops finished with 24k gold flakes." },
 ];
 
 export function FeaturedDesserts() {
@@ -29,12 +29,10 @@ export function FeaturedDesserts() {
           {items.map((it, i) => (
             <article
               key={it.name}
-              className={`group relative overflow-hidden rounded-3xl bg-card shadow-soft transition-all duration-500 hover:shadow-luxe ${
-                it.tall ? "lg:row-span-2" : ""
-              }`}
+              className="group relative h-full overflow-hidden rounded-3xl bg-card shadow-soft transition-all duration-500 hover:shadow-luxe"
               style={{ animationDelay: `${i * 80}ms` }}
             >
-              <div className={`relative overflow-hidden ${it.tall ? "aspect-[4/6]" : "aspect-[4/5]"}`}>
+              <div className="relative h-full overflow-hidden">
                 <img
                   src={it.img}
                   alt={it.name}

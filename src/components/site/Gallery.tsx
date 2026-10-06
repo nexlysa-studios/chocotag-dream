@@ -1,18 +1,18 @@
 import { SectionHeading } from "./SectionHeading";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import waffle from "@/assets/dessert-waffle.jpg";
-import shake from "@/assets/dessert-shake.jpg";
+import g1 from "@/assets/Chocotag (1).webp";
+import g2 from "@/assets/Chocotag (2).webp";
+import g3 from "@/assets/Chocotag (3).webp";
+import g4 from "@/assets/Chocotag (4).webp";
+import g5 from "@/assets/Chocotag (6).webp";
+import g6 from "@/assets/Chocotag (7).webp";
 
 const shots = [
-  { src: g2, alt: "Molten chocolate on a spoon", span: "row-span-2" },
-  { src: g1, alt: "Flatlay of premium chocolates", span: "" },
-  { src: shake, alt: "Signature chocolate shake", span: "" },
-  { src: g4, alt: "Handcrafted truffles on marble", span: "row-span-2" },
-  { src: waffle, alt: "Belgian waffle with berries", span: "" },
-  { src: g3, alt: "Chef piping chocolate onto dessert", span: "" },
+  { src: g2, alt: "Premium dessert spread at Chocotag", span: "row-span-2" },
+  { src: g1, alt: "Chocolate dessert with a warm café presentation", span: "" },
+  { src: g3, alt: "Dessert and coffee setup on a café table", span: "" },
+  { src: g4, alt: "Café seating and interior atmosphere", span: "row-span-2" },
+  { src: g5, alt: "Close-up of a chocolate dessert plate", span: "" },
+  { src: g6, alt: "Boutique dessert café storefront and seating", span: "" },
 ];
 
 export function Gallery() {

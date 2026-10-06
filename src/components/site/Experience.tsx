@@ -1,5 +1,5 @@
 import { Heart, Sparkles, Users, Gift } from "lucide-react";
-import cafe from "@/assets/cafe-interior.jpg";
+import cafe from "@/assets/Chocotag (8).webp";
 
 const pillars = [
   { icon: Sparkles, label: "Premium ingredients", copy: "Sourced with obsession, tempered with care." },
