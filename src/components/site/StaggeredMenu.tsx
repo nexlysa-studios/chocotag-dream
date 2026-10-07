@@ -553,15 +553,15 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         .sm-scope[data-open='true'] .staggered-menu-wrapper {
           position: fixed;
           inset: 0;
-          width: 100vw;
-          height: 100vh;
+          width: 100%;
+          height: 100%;
         }
         .sm-scope .sm-prelayers {
           position: absolute;
           top: 0;
           right: 0;
           bottom: 0;
-          width: 100vw;
+          left: 0;
           pointer-events: none;
           z-index: 5;
           transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -584,11 +584,10 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         .sm-scope .sm-icon-line { position: absolute; left: 50%; top: 50%; width: 100%; height: 2px; background: currentColor; border-radius: 2px; transform: translate(-50%, -50%); }
         .sm-scope .staggered-menu-panel {
           position: absolute;
-          top: 0;
-          right: 0;
-          width: 100vw;
-          height: 100vh;
-          min-height: 100vh;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          min-height: 100%;
           background: rgba(244, 236, 226, 0.98);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
@@ -621,7 +620,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         @media (max-width: 640px) {
           .sm-scope .sm-toggle { font-size: 0.7rem; }
           .sm-scope .sm-logo-img { height: 1.7rem; }
-          .sm-scope .staggered-menu-panel { width: 100vw; }
+          .sm-scope .staggered-menu-panel { width: 100%; }
         }
       `}</style>
     </div>
